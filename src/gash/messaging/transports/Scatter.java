@@ -53,13 +53,13 @@ public class Scatter implements MessageTransport<Message> {
 		 * node.start(); }
 		 */
 
-		ReceiverNode node2 = new ReceiverNode(2, "172.20.10.2", 4568, this);
+		ReceiverNode node2 = new ReceiverNode(2, "127.0.0.1", 4568, this);
 		nodes.put(node2.getNodeId(), node2);
 		node2.start();
 
-		ReceiverNode node1 = new ReceiverNode(1, "172.20.10.4", 4567, this);
+		/*ReceiverNode node1 = new ReceiverNode(1, "172.20.10.4", 4567, this);
 		nodes.put(node1.getNodeId(), node1);
-		node1.start();
+		node1.start();*/
 	}
 
 	public void setLeader(LeaderNode leader) {
